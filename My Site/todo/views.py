@@ -34,3 +34,8 @@ def delete_todo(request, todo_id):
     todo = Todo.objects.get(id=todo_id)
     todo.delete()
     return redirect('list_todos')
+
+
+
+
+

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Todo List{% endblock %}
+
+{% block content %}
+<h1>Todo List</h1>
+
+<a href="{% url 'create_todo' %}">Add a new task</a>
+
+<ul>
+    {% for todo in todo_list %}
+        <li>
+            <strong>{{ todo.task }}</strong>: {{ todo.description }}
+            <a href="{% url 'update_todo' todo.id %}">Edit</a>
+            <a href="{% url 'delete_todo' todo.id %}">Delete</a>
+            {% if todo.completed %}
+                <span style="color: green;">(Completed)</span>
+            {% else %}
+                <span style="color: red;">(Pending)</span>
+            {% endif %}
+        </li>   
+    {% endfor %}
+</ul>
+{% endblock %}

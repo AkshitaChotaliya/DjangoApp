@@ -1,0 +1,78 @@
+Aks py =====================
+pip install --upgrade pip
+pip3 install django
+pip freeze
+django-admin startproject Core
+python manage.py startapp admin-customise
+
+
+python manage.py runserver
+python manage.py migrate
+
+
+pip install -r requirements.txt	
+
+for creating new project:
+=====================
+python -m venv my-venv
+source my-venv/bin/activate
+
+
+rm -rf my-venv 
+python3 -m venv my-venv  
+source my-venv/bin/activate 
+pip install django 
+
+python manage.py createsuperuser
+python manage.py resetpassword user_name_of_user
+
+python manage.py makemigration
+
+
+==============
+
+* pip install Pillow —— upload image package  
+
+
+superUser
+=============
+
+user -
+admin@gmail.com
+pass -  
+admin12345
+
+
+=====================================
+
+
+
+Summary:
+* Activate the virtual environment: source myenv/bin/activate
+* Install Django in the virtual environment: pip install django
+* Verify installation: python -m django --version
+* Run the server: python manage.py runserver
+
+———————————————
+
+www.downloadly.ir
+
+======================  Customizing the Django Admin. ================
+
+
+https://testdriven.io/blog/customize-django-admin/	
+
+
+
+========================================
+
+
+django with javascript
+django relationship
+python-django-numpy-pandas
+kubernates-docker
+
+
+
+
+
